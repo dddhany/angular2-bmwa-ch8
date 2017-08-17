@@ -1,6 +1,31 @@
 import { NgModule } from "@angular/core";
-import { MdSidenavModule, MdListModule } from "@angular/material";
-const MATERIAL_MODULES = [MdSidenavModule, MdListModule];
+import {
+  MdToolbarModule,
+  MdSidenavModule,
+  MdButtonModule,
+  MdIconModule,
+  MdListModule,
+  MdTabsModule,
+  MdProgressSpinnerModule,
+  MdCardModule,
+  MdInputModule,
+  MdDialogModule,
+  MdSnackBarModule
+} from "@angular/material";
+
+const MATERIAL_MODULES = [
+  MdToolbarModule,
+  MdSidenavModule,
+  MdButtonModule,
+  MdIconModule,
+  MdListModule,
+  MdTabsModule,
+  MdProgressSpinnerModule,
+  MdCardModule,
+  MdInputModule,
+  MdDialogModule,
+  MdSnackBarModule
+];
 @NgModule({
   imports: MATERIAL_MODULES,
   exports: MATERIAL_MODULES
