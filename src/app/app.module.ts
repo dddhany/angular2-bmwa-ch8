@@ -7,16 +7,18 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from "./app.component";
 import { Safe } from "./safe";
-
+import { AppMaterialModule } from "./app-material.module";
 import { BookStoreService } from "./books";
+import { MasterDetailComponent } from "./books/master-detail/master-detail.component";
 
 @NgModule({
-  declarations: [AppComponent, Safe],
+  declarations: [AppComponent, Safe, MasterDetailComponent],
   imports: [
     BrowserModule,
     HttpModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppMaterialModule
   ],
   providers: [BookStoreService],
   bootstrap: [AppComponent]
